@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Machine"
   DTS:PackageType="5"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{BF95E41D-FFD9-4DA2-B543-312E5275A615}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{09AD8704-2A0A-4416-A2A2-5DCC15355071}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -133,9 +133,47 @@
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[{4977DCC1-3014-4D89-A87E-EFE602E28BBA\}]"
+      DTS:CreationName="ADO.NET:SQL"
+      DTS:DTSID="{4977DCC1-3014-4D89-A87E-EFE602E28BBA}"
+      DTS:ObjectName="{4977DCC1-3014-4D89-A87E-EFE602E28BBA}">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{7B440E4F-107E-4376-A06B-EBAC229F740C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{3529D4FB-B2E0-4200-9E5C-8486B55E6C93}" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{FA1F1948-C3DB-4BA4-9FDC-55167AD79EB7}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task 1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Load Data"
       DTS:CreationName="Microsoft.Pipeline"
@@ -765,7 +803,15 @@
         <NodeLayout
           Size="130,42"
           Id="Package\Load Data"
-          TopLeft="116,30" />
+          TopLeft="258,130" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="308,65" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Execute SQL Task 1"
+          TopLeft="334,215" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -775,13 +821,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="163,42"
-          Id="Package\Load Data\Machine Flat File"
-          TopLeft="193,85" />
-        <NodeLayout
           Size="151,42"
           Id="Package\Load Data\Machine Table"
           TopLeft="210,168" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Load Data\Machine Flat File"
+          TopLeft="193,85" />
         <EdgeLayout
           Id="Package\Load Data.Paths[Flat File Source Output]"
           TopLeft="274.5,127">
