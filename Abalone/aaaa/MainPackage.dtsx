@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="MainPackage"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{0A9B936B-217C-4040-AFDF-0C84FF129A03}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{A280F7F1-138A-42A7-AEB8-7CDDD47EA9F8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -86,13 +86,13 @@
           Id="Package\Abalone"
           TopLeft="143,45" />
         <NodeLayout
-          Size="121,42"
-          Id="Package\Machine"
-          TopLeft="317,42" />
-        <NodeLayout
           Size="145,42"
           Id="Package\Balancescale"
           TopLeft="480,45" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Machine"
+          TopLeft="317,42" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
