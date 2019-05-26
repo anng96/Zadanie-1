@@ -11,11 +11,21 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Machine"
   DTS:PackageType="5"
-  DTS:VersionBuild="31"
-  DTS:VersionGUID="{359F9217-476C-4BBA-8708-6419FE4ECAC5}">
+  DTS:VersionBuild="54"
+  DTS:VersionGUID="{CEBFAD1C-0F7D-42E7-893A-F252D77E9A0B}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-8MPE6U0.model]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{45BABE62-4920-421B-8BB8-9A2E52FCFE4C}"
+      DTS:ObjectName="DESKTOP-8MPE6U0.model">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-8MPE6U0;Initial Catalog=model;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Machine]"
       DTS:CreationName="FLATFILE"
@@ -138,19 +148,15 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{F363CE1C-79D8-45E5-8969-F29AA6D6D1CC}"
-      DTS:EvaluateAsExpression="True"
-      DTS:Expression="@[System::StartTime]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="DateTime">
       <DTS:VariableValue
-        DTS:DataType="7">5/20/2019 1:31:53 PM</DTS:VariableValue>
+        DTS:DataType="7">5/20/2019 1:53:29 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{6C0025DE-0F11-4AF5-BEF6-FE72606FB114}"
-      DTS:EvaluateAsExpression="True"
-      DTS:Expression="@[System::UserName]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="PackageName">
@@ -160,8 +166,6 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{482827F4-31B6-418F-AC8A-61384258F708}"
-      DTS:EvaluateAsExpression="True"
-      DTS:Expression="@[System::PackageName]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="UserName">
@@ -796,7 +800,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{3529D4FB-B2E0-4200-9E5C-8486B55E6C93}"
-          SQLTask:SqlStatementSource="INSERT INTO dbo.Zadanie2&#xA;                         (DataWywolania, Uzytkownik, NazwaPaczki)&#xA;VALUES        (?,?,?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:SqlStatementSource="INSERT INTO Zadanie2 &#xA;(DataWywolania, Uzytkownik, NazwaPaczki)&#xA;VALUES        (?,?,?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="User::DateTime"

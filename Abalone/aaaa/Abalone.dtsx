@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Abalone"
   DTS:PackageType="5"
-  DTS:VersionBuild="26"
-  DTS:VersionGUID="{79C23A50-31B6-4F64-A894-CF3761F75A1D}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{1F8CCE39-5A17-4D8B-BAA7-C70086F7A02A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -127,30 +127,25 @@
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{FDC69C78-7117-458E-AD54-F280369BBDA4}"
-      DTS:EvaluateAsExpression="True"
-      DTS:Expression="@[System:StartTime:]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="DateTime">
       <DTS:VariableValue
-        DTS:DataType="7">5/20/2019 1:22:15 PM</DTS:VariableValue>
+        DTS:DataType="7">12:00:00 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{BA18C5C7-6890-4163-AD33-DC83BB940236}"
-      DTS:EvaluateAsExpression="True"
-      DTS:Expression="@[System:PackageName:]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="PackageName">
       <DTS:VariableValue
-        DTS:DataType="8">Abalone</DTS:VariableValue>
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{33029367-B558-4E6E-B960-5FBD4A93CB7A}"
-      DTS:EvaluateAsExpression="True"
-      DTS:Expression="@[System:UserName:]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="UserName">
@@ -736,7 +731,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{3529D4FB-B2E0-4200-9E5C-8486B55E6C93}"
-          SQLTask:SqlStatementSource="INSERT INTO Zadanie2&#xA;                         (DataWywolania, Uzytkownik, NazwaPaczki)&#xA;VALUES        (?,?,?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:SqlStatementSource="INSERT INTO Zadanie2&#xA;                         ([DataWywolania], [NazwaPaczki], [Uzytkownik])&#xA;VALUES        (?,?,?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="User::DateTime"
