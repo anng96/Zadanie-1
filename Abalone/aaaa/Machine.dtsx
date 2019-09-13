@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Machine"
   DTS:PackageType="5"
-  DTS:VersionBuild="54"
-  DTS:VersionGUID="{CEBFAD1C-0F7D-42E7-893A-F252D77E9A0B}">
+  DTS:VersionBuild="55"
+  DTS:VersionGUID="{7432F6FB-EB53-43DB-A12C-33AD1DA27C8E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -800,7 +800,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{3529D4FB-B2E0-4200-9E5C-8486B55E6C93}"
-          SQLTask:SqlStatementSource="INSERT INTO Zadanie2 &#xA;(DataWywolania, Uzytkownik, NazwaPaczki)&#xA;VALUES        (?,?,?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          SQLTask:SqlStatementSource="INSERT INTO Zadanie2&#xA;                         ([DataWywolania], [NazwaPaczki], [Uzytkownik])&#xA;VALUES        (?,?,?)" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="User::DateTime"

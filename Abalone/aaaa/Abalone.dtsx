@@ -11,8 +11,8 @@
   DTS:LocaleID="1045"
   DTS:ObjectName="Abalone"
   DTS:PackageType="5"
-  DTS:VersionBuild="32"
-  DTS:VersionGUID="{1F8CCE39-5A17-4D8B-BAA7-C70086F7A02A}">
+  DTS:VersionBuild="33"
+  DTS:VersionGUID="{F6AD48F2-8AA3-493A-A674-71345F3774E7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -807,7 +807,7 @@
         <NodeLayout
           Size="156,42"
           Id="Package\Technical insert"
-          TopLeft="447,177" />
+          TopLeft="446,177" />
         <NodeLayout
           Size="149,42"
           Id="Package\Truncate table"
@@ -852,9 +852,9 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="155,39"
+              EndConnector="154,39"
               Start="0,0"
-              End="155,31.5">
+              End="154,31.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -865,13 +865,13 @@
                     Point2="0,19.5"
                     Point3="4,19.5" />
                   <mssgle:LineSegment
-                    End="151,19.5" />
+                    End="150,19.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="151,19.5"
-                    Point2="155,19.5"
-                    Point3="155,23.5" />
+                    Point1="150,19.5"
+                    Point2="154,19.5"
+                    Point3="154,23.5" />
                   <mssgle:LineSegment
-                    End="155,31.5" />
+                    End="154,31.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
